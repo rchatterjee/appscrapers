@@ -127,3 +127,27 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+
+################################################################################
+
+# I don't like 'em
+data/query_closure_android_1000.json
+data/query_closure_ios_1000.json
+missed_items
+
+ml/train_week1_1000_handlabeled_model.pkl
+ml/test_week1_100_handlabeled_wscore.csv
+for_google/
+
+platform-tools/
+phone_scanner/
+.secret.md
+wiki-news-300d-1M-subword.vec
+wiki-news-300d-1M-subword.vec.npz
+alternativeTo.net/
+../backup.ab
+
+node_modules/
+scraper/package-lock.json

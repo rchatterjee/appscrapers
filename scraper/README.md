@@ -1,41 +1,5 @@
-# appscrapers
-A collection of scrapers for Android and iOS apps on different stores
-
 # Scrapper scripts 
-## For scrping search engines
-```bash
-$ python scraper.search_engines <language> <country> <query>
-# Or, default language=US, country=EN
-$ python scraper.search_engines <query>
-# E.g.,
-$ python scraper.search_engines "Amy I being tracked"
-$ python scraper.search_engines bn bn "আমাকে কি track করা হচ্ছে"
-```
-
-if __name__ == "__main__":
-    import sys
-    if len(sys.argv)>3:
-        HL = sys.argv[1]
-        CR = sys.argv[2]
-        q = sys.argv[3]
-        print(google_suggest(q))
-    elif len(sys.argv) == 1:
-        q = sys.argv[1]
-        print(google_suggest(q))
-    else:
-        print("""
-$ python scraper.search_engines <language> <country> <query>
-# Or, default language=US, country=EN
-$ python scraper.search_engines <query>
-# E.g.,
-$ python scraper.search_engines "Amy I being tracked"
-$ python scraper.search_engines bn bn "আমাকে কি track করা হচ্ছে"
-""")
-    
-
-
-
-## For scraping Play Store and iTune App store
+For scraping Play Store and iTune App store
 
 The main calling script is [`pyscrapper.py`](pyscrapper.py).
 Checkout `cron.sh` for how to run the scripts. You have to run from 
