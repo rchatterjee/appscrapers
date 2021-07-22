@@ -391,7 +391,8 @@ def arguments():
         fromfile_prefix_chars='@'
     )
     parser.add_argument("--appstore",
-                        help="Which app store to target. options: android, ios",
+                        help="Which app store to target. **Options: android, ios**. "\
+                        "'google-realted' and 'google-comp' are not supported from commandline.",
                         action="store", choices=['android', 'ios', 'google-related',
                                                  'google-comp', 'bing'],
                         )
