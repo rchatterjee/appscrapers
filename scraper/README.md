@@ -11,12 +11,15 @@ the top level directory of the project.
 * Python requirements are listed in `scraper/requirement.txt`, which can be installed
   with `pip` (`pip install -U -r requirements.txt`).
 * Node requirements are listed in `scraper/package.json`
+* Python3 (make sure you use Python3.0+, it might work with Python2.7+, but haven't tested in Python2 in a while.)
+
 
 ```bash
 $ cd scraper/
 $ pip install -r requirement.txt
 $ npm i .  ## If no package.json run the following command
 $ npm i process zerorpc google-play-scraper app-store-scraper fs
+$ cd ..
 ```
 
 
@@ -130,6 +133,10 @@ Dump from sqlite to .csv, put into Google sheet, level out things, then download
 For training, just care about appid and relevance level from data. appid is necessary, is the way to key.
 
 
+### TODO
+[ ] Right now the project use a mix of Node and Python code. Update the whole proejct to use only Python code and libraries. 
+[ ] Add random and adaptive sleeping to avoid blocking by Google.
+[ ] 
 
 
 
