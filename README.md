@@ -12,6 +12,8 @@ $ python scraper.search_engines "Amy I being tracked"
 $ python scraper.search_engines bn bn "আমাকে কি track করা হচ্ছে"
 ```
 
+<!---
+```python
 if __name__ == "__main__":
     import sys
     if len(sys.argv)>3:
@@ -31,8 +33,8 @@ $ python scraper.search_engines <query>
 $ python scraper.search_engines "Amy I being tracked"
 $ python scraper.search_engines bn bn "আমাকে কি track করা হচ্ছে"
 """)
-    
-
+```    
+-->
 
 
 ## For scraping Play Store and iTune App store
